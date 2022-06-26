@@ -1,0 +1,66 @@
+
+table {
+  text-align: center;
+  vertical-align: middle;
+  font-family: Arial;
+  height: 100%;
+  width: 100%;
+}
+td {
+  font-size: 3vmin;
+  font-weight: bold;
+  page-break-inside: avoid;
+}
+th {
+  font-size: 3vmin;
+  background-color: #d8ffee;
+ 
+}
+.chalcogen {
+  background-color: #a0ffa0;
+}
+.inertgase {
+  background-color: #c0ffff;
+}
+.alkali {
+  background-color: #FF6666;
+}
+.earthmetal {
+  background-color: #FFDEAD;
+}
+.metalloid {
+  background-color: #cccc99;
+}
+.posttrans {
+  background-color: #cccccc;
+}
+.halogen {
+  background-color: #ffff99;
+}
+.transmetal {
+  background-color: #ffc0c0;
+}
+.lanthanoid {
+  background-color: #FFBFFF;
+}
+.actinoid {
+  background-color: #ef99cc;
+}
+.superact {
+  background-color: #33cc66;
+}
+.m {
+  text-align: right;
+  font-weight: normal;
+  font-size: 1.6vmin;
+  margin: 0.3vmin 0.3vmin 0.3vmin 0.3vmin;
+}
+.num {
+  text-align: left;
+  font-weight: normal;
+  font-size: 1.6vh;
+  margin: 0.33vmin 0.13vmin 0.13vmin 0.13vmin;
+}
+table img {
+  width: 12vw;
+}

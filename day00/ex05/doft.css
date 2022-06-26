@@ -1,0 +1,116 @@
+
+  .day_of_the_42-image
+  {
+    position: relative;
+    right: 150px;
+    bottom: 50px;
+    width : 400px;
+    height: auto;
+  }
+  .louper-image {
+    position: relative;
+    left: 190px;
+    bottom: 18px;
+    width: 250px;  
+    height: auto;  
+  }
+  .reload-image
+  {
+    position: relative;
+    bottom: 130px;
+    left: 160px;
+    width: 20px;  
+    height: auto;
+  }
+  .close-image
+  {
+    position: relative;
+    bottom: 40px;
+    left: 180px;
+    width: 20px;  
+    height: auto;
+  }
+  .box_top
+  {
+    width: 1000px;
+    height: 90px;
+    margin: 20px;
+    padding: 15px;
+    background-color: rgba(144,144,144,255);
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px 6px black
+}
+.box_left
+{
+  position: relative;
+  left: 300px;
+  top: 10px;    
+  width: 100px;
+  height: 320px;
+  margin: 20px;
+  padding: 15px;
+  background-color: rgba(144,144,144,255);
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px 6px black
+}
+.box_right
+{
+  position: relative;
+  left: 1170px;
+  top: -360px;    
+  width: 100px;
+  height: 320px;
+  margin: 20px;
+  padding: 15px;
+  background-color: rgba(144,144,144,255);
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px 6px black
+}
+
+.box_center
+{
+  position: relative;
+  left: 450px;
+  top: -730px;    
+  width: 670px;
+  height: 400px;
+  margin: 20px;
+  padding: 15px;
+  background-color: rgba(144,144,144,255);
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px 6px black
+}
+.form {
+  width: 520px;
+  height: 170px;
+  border: 0px;
+  border-style: solid;
+  color: black;
+  background-color: #7afa77;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px black;
+  display: block;
+  padding: 10px 10px 10px 10px;
+  margin-left: 30px;
+  margin-top: 505px;
+  z-index: 10;
+  position: absolute;
+  top: 20px;
+  left: 140px;
+  font-family: sans-serif;
+  letter-spacing: 0.65px;
+  font-size: 17px;
+  text-align: left;
+}
+
+#eye {
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+  }
+  .brick {
+    height: 60px;
+    width: 110px;
+    background-image: url(resources/brick.jpg);
+    background-repeat: repeat;
+  }
