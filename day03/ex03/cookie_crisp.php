@@ -20,3 +20,7 @@ if (array_key_exists("action", $_GET))
     }
 }
 ?>
+
+<?php
+print_r($_SESSION);
+?>
