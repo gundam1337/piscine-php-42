@@ -3,9 +3,9 @@
 
    class Color
    {
-    public int $red;
-    public int $green;
-    public int $blue;
+    public  $red;
+    public  $green;
+    public  $blue;
     static bool $verbose = false;
 
     public function __construct($array)
@@ -42,13 +42,7 @@
         return $ret;
     }
     
-    static public function doc(): void
-    {
-        $myfile = fopen("Color.doc.txt", "r") or die("Unable to open file!");
-        echo fread($myfile,filesize("Color.doc.txt"));
-        fclose($myfile);
-    }
-
+    
    
     public function add(Color $new_color)
     {
@@ -73,11 +67,4 @@
     }
    }
 
-   $array = ['rgb'=>8565640];
-   $c = new Color($array);
-
-   $c->doc();
-
-   //echo $c->red."\n", $c->green."\n",$c->blue."\n";
-   //echo $c;
 ?>
