@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon</title>
+</head>
+<style>
+    .myDiv {
+
+        border: red;
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: red;
+        border-radius: 100%;
+    }
+</style>
+
+<body>
+    <div class="myDiv">
+        <script>
+
+            let i = 0;
+            let j = 0;
+            var div = document.getElementsByClassName('myDiv')[0];
+            div.addEventListener('click', mouseClickEvent, false);
+            function mouseClickEvent() {
+                var elemnt = document.getElementsByClassName('myDiv');
+                let currentWidth = document.querySelector(".myDiv").offsetHeight;
+                let currentHeight = document.querySelector(".myDiv").offsetWidth;
+
+                elemnt[0].style.width = currentWidth + 10 + "px";
+                elemnt[0].style.height = currentHeight + 10 + "px";
+                i++;
+                if (i % 4 == 0)
+                    elemnt[0].style.backgroundColor = "red";
+                if (i % 4 == 1)
+                    elemnt[0].style.backgroundColor = "green";
+                if (i % 4 == 2)
+                    elemnt[0].style.backgroundColor = "blue";
+                if (i % 4 == 3)
+                    elemnt[0].style.backgroundColor = "yellow";
+
+                if (elemnt[0].style.height == "420px") {
+                    elemnt[0].style.width = "250px"
+                    elemnt[0].style.height = "250px"
+                }
+
+            }
+            div.addEventListener('mousemove', mouseMouveEvent, false);
+
+            function mouseMouveEvent() {
+                var elemnt = document.getElementsByClassName('myDiv');
+                let currentWidth = document.querySelector(".myDiv").offsetHeight;
+                let currentHeight = document.querySelector(".myDiv").offsetWidth;
+                j++;
+                console.log(j);
+                if (elemnt[0].style.height > "250px" && elemnt[0].style.width > "250px")
+                {
+                    elemnt[0].style.width = currentWidth - 10 + "px";
+                    elemnt[0].style.height = currentHeight - 10 + "px";
+                }
+            }
+
+        </script>
+    </div>
+</body>
+
+</html>
