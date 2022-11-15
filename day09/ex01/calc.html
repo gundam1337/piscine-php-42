@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<style>
+    #typefOperation {
+
+        text-align: center;
+
+    }
+
+    #button {
+        width: 100px;
+        height: 20px;
+    }
+</style>
+
+<body>
+    <div id="typefOperation">
+        <form action="">
+            <input type="text" id="firstNumber" size="20" name="firstNumber" value=""><br>
+            <input id="input" list="op" size="5">
+            <datalist id="op">
+                <option value="+" />
+                <option value="-" />
+                <option value="*" />
+                <option value="/" />
+                <option value="%" />
+            </datalist><br>
+            <input type="text" id="secondNumber" size="20" name="secondNumber"><br>
+            <button id="button" type="button" onclick="getInputValue();">try me!</button><br>
+        </form>
+    </div>
+    <script>
+
+        window.onload = function () {
+            setInterval("alert('Please, use me...')", 30000)
+        };
+        function onInput() {
+            let n1 = document.getElementById("firstNumber").value;
+            let n2 = document.getElementById("secondNumber").value;
+            console.log(n1, n2);
+            var val = document.getElementById("input").value;
+            var opts = document.getElementById("op").childNodes;
+
+            switch (val) {
+                case "+":
+                    alert(Number(n1) + Number(n2));
+                    break;
+                case "-":
+                    alert(Number(n1) - Number(n2));
+                    break;
+                case "*":
+                    alert(Number(n1) * Number(n2));
+                    break;
+                case "/":
+                    alert(Number(n1) / Number(n2));
+                    break;
+                case "%":
+                    alert(Number(n1) % Number(n2));
+                    break;
+            }
+        }
+
+        function checkValue() {
+            let n1 = document.getElementById("firstNumber").value;
+            let n2 = document.getElementById("secondNumber").value;
+
+            if (n1 == undefined || n2 == undefined) {
+                alert("Error :'(");
+                return false;
+
+            }
+            if (n1.match(/^[0-9]+$/) == null || n2.match(/^[0-9]+$/) == null) {
+                alert("Error :'(");
+                return false;
+            }
+            if (Number(n1) < 0 || Number(n2) < 0) {
+                alert("Error :'(");
+                return false;
+            }
+            return true;
+
+        }
+        function getInputValue() {
+
+            if (checkValue() == false)
+                return;
+            onInput();
+            window.location.reload();
+        }
+    
+
+
+    </script>
+</body>
+
+</html>
