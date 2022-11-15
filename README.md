@@ -2,27 +2,25 @@
 
 Ecole 42 - Piscine PHP / Mysql / Html / Css / Javascript
 
-d00 : 101/100 :)
+d00 : done :)
 
-d01 : 100/100 :)
+d01 : done :)
 
-d02 : 101/100 :)
+d02 : done :)
 
-d03 : 100/100 :)
+d03 : done :)
 
-d04 : 
+d04 : done :)
 
 rush00 : 
 
-d05 : 
+d05 : done :)
 
-d06 : 
+d06 : done :)
 
-d07 : 
+d07 : done :)
 
-d08 : 
-
-d09 : 
+d09 : done :)
 
 rush01 :
 
